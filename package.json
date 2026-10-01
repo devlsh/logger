@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "@evilkiwi/logger",
+  "name": "@devlsh/logger",
   "version": "1.1.0",
   "description": "Pretty-print utility logger for JS/TS",
   "files": [
@@ -14,13 +14,13 @@
     "url": "https://evil.kiwi",
     "email": "support@evil.kiwi"
   },
-  "homepage": "https://github.com/evilkiwi/logger",
+  "homepage": "https://github.com/devlsh/logger",
   "bugs": {
-    "url": "https://github.com/evilkiwi/logger/issues"
+    "url": "https://github.com/devlsh/logger/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evilkiwi/logger.git"
+    "url": "git+https://github.com/devlsh/logger.git"
   },
   "keywords": [
     "typescript",
@@ -34,7 +34,8 @@
     "prepack": "pnpm run build",
     "build": "cross-env NODE_ENV=production node build.mjs && tsc",
     "dev": "cross-env NODE_ENV=development node build.mjs && tsc",
-    "lint": "eslint --ext .ts --ignore-path .gitignore src"
+    "lint": "eslint --ext .ts --ignore-path .gitignore src",
+    "test:package": "node scripts/verify-package.mjs"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",

@@ -1,6 +1,6 @@
-import type { Logger, LoggerOptions, Namespace, PrintOptions } from '@/types';
-import { timestamp } from '@/helpers';
-import { PrintLevel } from '@/types';
+import type { Logger, LoggerOptions, Namespace, PrintOptions } from '../types';
+import { timestamp } from '../helpers';
+import { PrintLevel } from '../types';
 import { base, code } from './styles';
 
 export let namespace: Namespace = { name: '' };
