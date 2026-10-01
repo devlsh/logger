@@ -1,12 +1,12 @@
 <div align="center">
-  <a href="https://www.npmjs.com/package/@evilkiwi/logger" target="_blank">
-    <img src="https://img.shields.io/npm/v/@evilkiwi/logger?style=flat-square" alt="NPM" />
+  <a href="https://www.npmjs.com/package/@devlsh/logger" target="_blank">
+    <img src="https://img.shields.io/npm/v/@devlsh/logger?style=flat-square" alt="NPM" />
   </a>
-  <img src="https://img.shields.io/npm/l/@evilkiwi/logger?style=flat-square" alt="GPL-3.0-only" />
+  <img src="https://img.shields.io/npm/l/@devlsh/logger?style=flat-square" alt="GPL-3.0-only" />
   <h3>Pretty-print utility logger for browsers.</h3>
 </div>
 
-`@evilkiwi/logger` provides a small interface on top of the existing `console` browser API, adding:
+`@devlsh/logger` provides a small interface on top of the existing `console` browser API, adding:
 
 - Automatic code highlighting via \`template literal\` syntax.
 - Instanced and side-effect-free loggers.
@@ -18,15 +18,15 @@
 ## Installation
 
 ```bash
-npm install @evilkiwi/logger
+npm install @devlsh/logger
 ```
 
 ## Usage
 
-See the [example folder](https://github.com/evilkiwi/logger/tree/main/example) for a working example.
+See the [example folder](https://github.com/devlsh/logger/tree/main/example) for a working example.
 
 ```typescript
-import { createLogger } from '@evilkiwi/logger';
+import { createLogger } from '@devlsh/logger';
 
 const logger = createLogger({
   // Optional - a prefix to prepend to all messages from this logger.
@@ -47,7 +47,7 @@ logger.debug('hello world!');
 The `styles` option when creating a logger can be used to customize the CSS styles used for the logger, or to disable styling entirely (useful for environments like Capacitor, where the styling floods things like Xcode debugger).
 
 ```typescript
-import { createLogger, styles } from '@evilkiwi/logger';
+import { createLogger, styles } from '@devlsh/logger';
 
 const logger = createLogger({
   styles: {
@@ -75,10 +75,10 @@ The logger attempts to emulate the `console` API as closely as possible - if the
 
 ### Grouping
 
-The `group` and `groupCollapsed` methods are used to group messages together, and can be used to create collapsible sections in the console. `@evilkiwi/logger` supports these methods as intended (via calling `groupEnd`) - but also provides an optional context closure, which will automatically call `groupEnd`.
+The `group` and `groupCollapsed` methods are used to group messages together, and can be used to create collapsible sections in the console. `@devlsh/logger` supports these methods as intended (via calling `groupEnd`) - but also provides an optional context closure, which will automatically call `groupEnd`.
 
 ```typescript
-import { createLogger } from '@evilkiwi/logger';
+import { createLogger } from '@devlsh/logger';
 
 const logger = createLogger();
 

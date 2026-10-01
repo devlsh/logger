@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "@evilkiwi/logger",
+  "name": "@devlsh/logger",
   "version": "3.0.1",
   "sideEffects": false,
   "packageManager": "pnpm@10.12.4",
@@ -26,13 +26,13 @@
     "url": "https://evil.kiwi",
     "email": "support@evil.kiwi"
   },
-  "homepage": "https://github.com/evilkiwi/logger",
+  "homepage": "https://github.com/devlsh/logger",
   "bugs": {
-    "url": "https://github.com/evilkiwi/logger/issues"
+    "url": "https://github.com/devlsh/logger/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evilkiwi/logger.git"
+    "url": "git+https://github.com/devlsh/logger.git"
   },
   "keywords": [
     "typescript",
@@ -46,6 +46,7 @@
     "commit": "better-commits",
     "lint": "biome check --error-on-warnings",
     "prepublishOnly": "pnpm build",
+    "test:package": "pnpm build && node scripts/verify-package.mjs",
     "typecheck": "tsc --noEmit --incremental"
   },
   "devDependencies": {

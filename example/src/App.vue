@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import { createLogger, styles } from '@evilkiwi/logger';
+import { createLogger, styles } from '@devlsh/logger';
 
 const logger1 = createLogger({
   name: 'logger1',

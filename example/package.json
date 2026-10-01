@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"type": "module",
-	"name": "@evilkiwi/logger-example",
+	"name": "@devlsh/logger-example",
 	"scripts": {
 		"dev": "vite"
 	},

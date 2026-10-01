@@ -7,7 +7,7 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: '@evilkiwi/logger',
+        find: '@devlsh/logger',
         replacement: fileURLToPath(new URL('..', import.meta.url)),
       },
       {

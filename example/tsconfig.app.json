@@ -9,7 +9,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "paths": {
-      "@evilkiwi/logger": [
+      "@devlsh/logger": [
         "../",
       ],
       "@/*": [
