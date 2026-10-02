@@ -34,8 +34,7 @@
     "prepack": "pnpm run build",
     "build": "cross-env NODE_ENV=production node build.mjs && tsc",
     "dev": "cross-env NODE_ENV=development node build.mjs && tsc",
-    "lint": "eslint --ext .ts --ignore-path .gitignore src",
-    "test:package": "node scripts/verify-package.mjs"
+    "lint": "eslint --ext .ts --ignore-path .gitignore src"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
